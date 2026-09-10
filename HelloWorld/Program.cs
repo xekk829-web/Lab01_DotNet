@@ -82,15 +82,45 @@
 // Console.WriteLine(Math.Min(10, 25));
 // Console.WriteLine(Math.Round(3.567, 2));
 
-Console.WriteLine("Калькулятор");
-Console.Write("Введите первое число: ");
-double num1 = double.Parse(Console.ReadLine());
-Console.Write("Введите второе число: ");
-double num2 = double.Parse(Console.ReadLine());
-Console.WriteLine($"Сумма: {num1 + num2}");
-Console.WriteLine($"Разность: {num1 - num2}");
-Console.WriteLine($"Произведение: {num1 * num2}");
-if (num2 != 0)
-    Console.WriteLine($"Частное: {num1 / num2}");
-else
-    Console.WriteLine("Деление на ноль невозможно!");
+// Console.WriteLine("Калькулятор");
+// Console.Write("Введите первое число: ");
+// double num1 = double.Parse(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// double num2 = double.Parse(Console.ReadLine());
+// Console.WriteLine($"Сумма: {num1 + num2}");
+// Console.WriteLine($"Разность: {num1 - num2}");
+// Console.WriteLine($"Произведение: {num1 * num2}");
+// if (num2 != 0)
+//     Console.WriteLine($"Частное: {num1 / num2}");
+// else
+//     Console.WriteLine("Деление на ноль невозможно!");
+
+// Console.WriteLine(int.MinValue);
+// Console.WriteLine(int.MaxValue);
+// Console.WriteLine(double.MinValue);
+// Console.WriteLine(double.MaxValue);
+
+Console.WriteLine("Добро пожаловать в анкету!");
+Console.Write("Введите ваше имя: ");
+string name = Console.ReadLine();
+Console.Write("Введите вашу фамилию: ");
+string surname = Console.ReadLine();
+Console.Write("Введите вашу группу: ");
+string group = Console.ReadLine();
+Console.Write("Введите ваш год рождения: ");
+int birthYear = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите ваш средний балл: ");
+double gpa = double.Parse(Console.ReadLine());
+
+int currentYear = 2026;
+int age = currentYear - birthYear;
+bool isExcellent = gpa >= 4.5;
+string status = isExcellent ? "Отличник" : "Хорошист";
+
+Console.WriteLine("Ваша анкета");
+Console.WriteLine($"Имя: {name} {surname}");
+Console.WriteLine($"Группа: {group}");
+Console.WriteLine($"Возраст: {age}");
+Console.WriteLine($"Средний балл: {gpa}");
+Console.WriteLine($"Статус: {status}");
+Console.WriteLine($"Лет до 30: {30 - age}");
