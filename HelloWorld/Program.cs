@@ -124,3 +124,50 @@ Console.WriteLine($"Возраст: {age}");
 Console.WriteLine($"Средний балл: {gpa}");
 Console.WriteLine($"Статус: {status}");
 Console.WriteLine($"Лет до 30: {30 - age}");
+
+// Задание 1
+string myFavoriteGame = "The Binding of Isaac";
+int myFavoriteNumber = 26;
+double PI = 3.14;
+char myFavoriteLetter = 'I';
+Console.WriteLine($"Игра: {myFavoriteGame} | Число: {myFavoriteNumber} | Число Пи: {PI} | Символ: {myFavoriteLetter}");
+Console.WriteLine("__________________________");
+
+// Задание 2
+Console.WriteLine("I");
+Console.WriteLine("NEED");
+Console.WriteLine("MORE");
+Console.WriteLine("POWER!!!");
+Console.WriteLine("__________________________");
+
+// Задание 3
+Console.WriteLine("\"Hello There\"");
+Console.WriteLine("__________________________");
+
+// Задание 4
+Console.Write("Введите цену монитора: ");
+int monitor = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите цену системного блока: ");
+int sysB = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите цену клавиатуры: ");
+int keyboard = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите цену мыши: ");
+int mouse = Convert.ToInt32(Console.ReadLine());
+int price = 3 * (monitor + sysB + keyboard + mouse);
+Console.WriteLine($"Общая стоимость трёх компьютеров: {price}");
+Console.WriteLine("__________________________");
+
+// Задание 5
+Console.Write("Введите a: ");
+int a = Convert.ToInt32(Console.ReadLine()!);
+Console.Write("Введите b: ");
+int b = Convert.ToInt32(Console.ReadLine()!);
+double f = 3 * Math.Pow(a + b, 3) + 275 * Math.Pow(b, 2) - 127 * a - 41;
+Console.WriteLine($"Значение функции: {f}");
+Console.WriteLine("__________________________");
+
+// Задание 6
+Console.Write("Введите температуру в градусах Цельсия: ");
+double celsius = Convert.ToDouble(Console.ReadLine()!);
+double fahrenheit = celsius * 9 / 5 + 32;
+Console.WriteLine($"Температура в градусах Фаренгейта: {fahrenheit}");
